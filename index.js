@@ -6,6 +6,9 @@ const home = require("./routes/home");
 const app = express();
 app.use(express.json());
 
+app.get('/',(req,res)=>{
+    res.send('api is working')
+})
 // Routes
 app.use("/home", home);
 
